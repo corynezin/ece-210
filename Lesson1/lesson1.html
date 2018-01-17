@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="generator" content="MATLAB R2017b"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><title>Lesson 1</title><style type="text/css">
+* {margin: 0; padding: 0;}
+body {text-align: start; line-height: 17.234001159668px; min-height: 0px; white-space: normal; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-style: normal; font-size: 14px; font-weight: normal; text-decoration: none; white-space: normal; }
+h1, h2 {font-weight: normal;}
+.content { padding: 30px; }
+
+.S0 { margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S1 { text-align: left; line-height: 26.3999996185303px; min-height: 24px; white-space: pre-wrap; color: rgb(213, 80, 0); font-family: Helvetica, Arial, sans-serif; font-size: 22px; white-space: pre-wrap; margin-left: 4px; margin-top: 3px; margin-bottom: 15px; margin-right: 10px;  }
+.S2 { min-height: 0px; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S3 { text-align: left; line-height: 21px; min-height: 17px; white-space: pre-wrap; font-family: Helvetica, Arial, sans-serif; white-space: pre-wrap; margin-left: 4px; margin-top: 2px; margin-bottom: 9px; margin-right: 10px;  }
+.S4 { text-align: left; line-height: 20.576000213623px; min-height: 20px; white-space: pre-wrap; color: rgb(60, 60, 60); font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; white-space: pre-wrap; margin-left: 4px; margin-top: 15px; margin-bottom: 9px; margin-right: 10px;  }
+.S5 { font-family: Helvetica, Arial, sans-serif; margin-left: 0px; margin-top: 10px; margin-bottom: 20px; margin-right: 0px;  }
+.S6 { text-align: left; line-height: 21px; white-space: pre-wrap; white-space: pre-wrap; margin-left: 56px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S7 { margin-left: 3px; margin-top: 10px; margin-bottom: 4px; margin-right: 3px;  }
+.S8 { min-height: 18px; white-space: nowrap; white-space: nowrap; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S9 { min-height: 0px; white-space: pre; white-space: pre; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 45px;  }
+.S10 { color: rgb(34, 139, 34); margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S11 { text-align: left; line-height: 20.576000213623px; min-height: 20px; white-space: pre-wrap; color: rgb(60, 60, 60); font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; white-space: pre-wrap; margin-left: 4px; margin-top: 3px; margin-bottom: 9px; margin-right: 10px;  }
+
+.CodeBlock {margin: 10px 0 10px 0; background-color: #F7F7F7;}
+.CodeBlock+.paragraphNode {margin-top: 10px;}
+.lineNode {padding-left: 10px; border-left: 1px solid #E9E9E9; border-right: 1px solid #E9E9E9;}
+.inlineWrapper:first-child .lineNode,.inlineWrapper.outputs+.inlineWrapper .lineNode {padding-top: 5px; border-top: 1px solid #E9E9E9;}
+.inlineWrapper:last-child .lineNode,.inlineWrapper.outputs .lineNode {padding-bottom: 5px; border-bottom: 1px solid #E9E9E9;}
+.lineNode .textBox {white-space: pre;}
+</style></head><body><div class = "content"><div class = 'SectionBlock containment active'><h1 class = "S1"><span class = "S2"><span class="S0">Lesson 1</span></span></h1><div class = "S3"><span class = "S2"><span class="S0">Written by Brenda So</span></span></div><h2 class = "S4"><span class = "S2"><span class="S0">Objective</span></span></h2><div class = "S3"><span class = "S2"><span class="S0">After this class, you should be able to:</span></span></div><ul class = "S5"><li class = "S6"><span class = "S0"><span class="S0">Know why you need MATLAB</span></span></li><li class = "S6"><span class = "S0"><span class="S0">Manuever around the MATLAB interface</span></span></li><li class = "S6"><span class = "S0"><span class="S0">Understand arithmetic and basic functions in MATLAB</span></span></li><li class = "S6"><span class = "S0"><span class="S0">Know how to make scalar, vector and matrix variables in MATLAB</span></span></li><li class = "S6"><span class = "S0"><span class="S0">Know how to perform matrix operations in MATLAB</span></span></li></ul><h2 class = "S4"><span class = "S2"><span class="S0">MATLAB overview</span></span></h2><div class = "S3"><span class = "S2"><span class="S0">MATLAB (short for MATrix LABoratory) is a commonly used interactive software amongst engineers. As the name suggest, MATLAB organizes its data as matrices and is specially designed for matrix multiplication. In addition, it has a plethora of plugins and functions that engineers can use, such as machine learning, financial analysis, filter design etc. </span></span></div><div class = "S3"><span class = "S2"><span class="S0">In Cooper, MATLAB is often used in signals class. However, it is also useful is classes that interests computer engineers (e.g. Machine Learning) and can be used as a calculator in other classes. </span></span></div><h2 class = "S4"><span class = "S2"><span class="S0">MATLAB Environment</span></span></h2><h2 class = "S4"><span class = "S2"><span class="S0">Command window</span></span></h2><div class = "S3"><span class = "S2"><span class="S0">The command window is sort of the equivalent of a terminal in linux, or cygwin in windows. When you type a command into the command window, an operation performs. You can type a MATLAB command, such as 5+10, and the answer would be printed out. If a variable is not assigned to the command, the result would be stored in the variable ans automatically. If a semicolon is added at the end of the line, the result would be suppressed. You can clear the command window by typing clc. Moreover, you can also type command line commands in the command window, such as ls, pwd etc. </span></span></div><h2 class = "S4"><span class = "S2"><span class="S0">Command history</span></span></h2><div class = "S3"><span class = "S2"><span class="S0">When you are playing around with different functions in MATLAB, you might want to trace back what functions you played with. At that time, you can press the up arrow, which would show you your command history. </span></span></div><h2 class = "S4"><span class = "S2"><span class="S0">Workspace</span></span></h2><div class = "S3"><span class = "S2"><span class="S0">The workspace is where all the variables are stored. Each variable is displayed as a name value pair in the workspace. If the variable is a scalar, then the actual value would be shown. If it is a vector or matrix , then depending on the size of the vector / matrix, it would either be shown as its value or simply the size of the vector / array and its type. You can double click on the variables to investigate its actual value in a spreadsheet.</span></span></div><h2 class = "S4"><span class = "S2"><span class="S0">Current Folder</span></span></h2><div class = "S3"><span class = "S2"><span class="S0">The current folder shows you where you are located at in MATLAB. If you execute the command pwd on the command window, it should show you the location of the current folder. You might find a time where you need to add a folder and link it to your current folder location. At that time, you can right click and select "Add to Path". To change current folder, you can execute the cd command on your command window</span></span></div><h2 class = "S4"><span class = "S2"><span class="S0">Editor</span></span></h2><div class = "S3"><span class = "S2"><span class="S0">The editor is where you can write a script and execute it. All MATLAB scripts are saved as .m files. To execute a script, press the play button on top in EDITOR tab. When you are executing a script, you can use the semicolon to suppress the output of each line. To display a certain variable at an arbitrary location in your script, you can use disp() function. </span></span></div><h2 class = "S4"><span class = "S2"><span class="S0">Arithmetic and Basic functions</span></span></h2><h2 class = "S4"><span class = "S2"><span class="S0">Basic Operations</span></span></h2><div class = 'CodeBlock contiguous'><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">5</span><span class="S0">+</span><span class="S0">10;                </span><span class="S10">% Addition</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">ans</span><span class="S0">;                 </span><span class="S10">% Prints out previous answer</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">25</span><span class="S0">-</span><span class="S0">7;                </span><span class="S10">% Subtraction</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">24</span><span class="S0">*</span><span class="S0">86;               </span><span class="S10">% Multiplication</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">123.456</span><span class="S0">*</span><span class="S0">78.90;       </span><span class="S10">% Multiplication</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">145</span><span class="S0">/</span><span class="S0">123;             </span><span class="S10">% Division</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">2</span><span class="S0">^</span><span class="S0">5;                 </span><span class="S10">% Exponential</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">log10(1000);         </span><span class="S10">% Logarithm base 10</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">log(exp(5));         </span><span class="S10">% Natural logarithm</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">sqrt(625);           </span><span class="S10">% Square root</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">sin(pi);             </span><span class="S10">% sine function</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">asin(0);             </span><span class="S10">% arc sine function</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">1e5;                 </span><span class="S10">% e5 multiplies 1 by 10^5</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">1e-2;                </span><span class="S10">% e-2 multiplies 1 by 10^-2</span></span></div></div></div></div><div class = "S0"></div><div class = 'SectionBlock containment'><h2 class = "S11"><span class = "S2"><span class="S0">Complex Numbers</span></span></h2><div class = 'CodeBlock contiguous'><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">2</span><span class="S0">+</span><span class="S0">i</span><span class="S0">;</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">2</span><span class="S0">+</span><span class="S0">j</span><span class="S0">;</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">(2+2i)</span><span class="S0">*</span><span class="S0">(3+4j);</span></span></div></div></div></div><div class = "S0"></div><div class = 'SectionBlock containment'><h2 class = "S11"><span class = "S2"><span class="S0">Special Numbers</span></span></h2><div class = 'CodeBlock contiguous'><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">pi</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">exp(2*pi*</span><span class="S0">j</span><span class="S0">)</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">inf</span></span></div></div></div></div><div class = "S0"></div><div class = 'SectionBlock containment'><h2 class = "S11"><span class = "S2"><span class="S0">Complex number operations</span></span></h2><div class = 'CodeBlock contiguous'><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">conj(2+</span><span class="S0">i</span><span class="S0">);         </span><span class="S10">% complex conjugate</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">real(2+</span><span class="S0">i</span><span class="S0">);         </span><span class="S10">% real part</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">imag(2+</span><span class="S0">i</span><span class="S0">);         </span><span class="S10">% imaginary part</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">abs(2+</span><span class="S0">i</span><span class="S0">);          </span><span class="S10">% magnitude/absolute value</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">angle(2+</span><span class="S0">i</span><span class="S0">);        </span><span class="S10">% angle or phase</span></span></div></div></div></div><div class = "S0"></div><div class = 'SectionBlock containment'><h2 class = "S11"><span class = "S2"><span class="S0">Variables</span></span></h2><div class = "S3"><span class = "S2"><span class="S0">In matlab, there are 3 different kinds of variabes</span></span></div><ul class = "S5"><li class = "S6"><span class = "S0"><span class="S0">Scalar - A scalar appears as 1-by-1 and it is a single real or complex number</span></span></li><li class = "S6"><span class = "S0"><span class="S0">Vector - A vector is 1-by-n or n-by-1, and appears in MATLAB as a row or column of complex numbers</span></span></li><li class = "S6"><span class = "S0"><span class="S0">Matrix - A matrix is m-by-n, and appears in MATLAB as, essentially, a matrix. A matrix is a 2-D array</span></span></li><li class = "S6"><span class = "S0"><span class="S0">Array - An array is a way to store numbers. </span></span></li></ul><h2 class = "S4"><span class = "S2"><span class="S0">Scalar Variables</span></span></h2><div class = 'CodeBlock contiguous'><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">a = 5;</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">b = 10;</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">c = a+b;</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">z1 = 2+</span><span class="S0">j</span><span class="S0">;</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">z2 = 3+4j;</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">z = z1*z2;</span></span></div></div></div></div><div class = "S0"></div><div class = 'SectionBlock containment'><h2 class = "S11"><span class = "S2"><span class="S0">Vector Variables</span></span></h2><div class = 'CodeBlock contiguous'><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">x</span><span class="S0"> = [1 2+3j 2.718 pi cos(pi)];         </span><span class="S10">% row vector</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">x = [1, 2+3j, 2.718, pi, cos(pi)];     </span><span class="S10">% same thing with commas</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">xT = transpose(x);                     </span><span class="S10">% now you created the column vector</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">y = [1 ; 2.5 ; 3.2 ; 4*pi; cos(pi)];   </span><span class="S10">% column vector    </span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">xlen = length(x)                       </span><span class="S10">% length of row/col vector</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">ylen = length(y)                       </span><span class="S10">% same value as length(x)!</span></span></div></div></div></div><div class = "S0"></div><div class = 'SectionBlock containment'><h2 class = "S11"><span class = "S2"><span class="S0">BE CAREFUL!</span></span></h2><div class = "S3"><span class = "S2"><span class="S0">The following two vectors produces vectors of different sizes, the reason being linspace(x1, x2, n) creates n evenly spaced points between x1 and x2 , with the value of interval (x2-x1)/(n+1), while the colon operator (used in the form of x1:i:x2) creates an array with [x1, x1+i, x1+2i..., x1+mi], where m = (x2-x1)/i. Hence when creating a vector with the colon operator or linspace, make sure you know when to use it. In conclusion, linspace works with number of points, whereas the colon operator works with increments</span></span></div><div class = 'CodeBlock contiguous'><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">v1 = linspace(-5,5,10)</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">v2 = -5:1:5</span></span></div></div></div></div><div class = "S0"></div><div class = 'SectionBlock containment'><h2 class = "S11"><span class = "S2"><span class="S0">Matrix Variables</span></span></h2><div class = 'CodeBlock contiguous'><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">A = [1 2 3; 4 5 6; 7 8 9]; </span><span class="S10">% basic construction of matrix</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">B = repmat(A,2,1);         </span><span class="S10">% you concatenated A one above the other</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">C = [A;A];                 </span><span class="S10">% You've placed A side by side 2 times</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">C1 = transpose(C);         </span><span class="S10">% now you transposed C!</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">C2 = C.';                  </span><span class="S10">% still transposed! if it is only C' then it is conjugate transpose</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">size(C)                    </span><span class="S10">% Confirm that they are tranposes of each other</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">size(C1)</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">size(C1,1)                 </span><span class="S10">% You get the dimension you want!</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">eye(3);                    </span><span class="S10">% Create identity matrix</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">speye(30000000);           </span><span class="S10">% Create sparse identity matrix</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">D = ones(50,60);           </span><span class="S10">% D is 50-by-60 ones</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">E = zeros(40);             </span><span class="S10">% E is 40-by-40 zeros</span></span></div></div></div></div><div class = "S0"></div><div class = 'SectionBlock containment'><h2 class = "S11"><span class = "S2"><span class="S0">Matrix Operations</span></span></h2><div class = 'CodeBlock contiguous'><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">B</span><span class="S0">+</span><span class="S0">C;          </span><span class="S10">% addition</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">B</span><span class="S0">-</span><span class="S0">C;          </span><span class="S10">% subtraction</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">4*B </span><span class="S0">+</span><span class="S0"> C/5;    </span><span class="S10">% multiplication and division with a constant</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">A</span><span class="S0">+</span><span class="S0">1;          </span><span class="S10">% element wise addition with a constant</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">B</span><span class="S0">*</span><span class="S0">C';         </span><span class="S10">% matrix multiplication</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">B</span><span class="S0">.*</span><span class="S0">C;         </span><span class="S10">% element wise multiplication</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">B.^3          </span><span class="S10">% exponents, note: do not use B^3</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">2*(eye(3))^3  </span><span class="S10">% only possible with square matrices</span></span></div></div></div></div><div class = "S0"></div><div class = 'SectionBlock containment'><h2 class = "S11"><span class = "S2"><span class="S0">Broadcasting</span></span></h2><div class = 'CodeBlock contiguous'><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">v = [1 2 3 4];</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">w = v';</span></span></div></div><div class = 'inlineWrapper'><div class = "S8 lineNode"><span class = "S9"><span class="S0">w</span><span class="S0">-</span><span class="S0">v</span></span></div></div></div></div></div>
+<!-- 
+##### SOURCE BEGIN #####
+%% Lesson 1
+% Written by Brenda So
+%% Objective
+% After this class, you should be able to:
+% 
+% * Know why you need MATLAB
+% * Manuever around the MATLAB interface
+% * Understand arithmetic and basic functions in MATLAB
+% * Know how to make scalar, vector and matrix variables in MATLAB
+% * Know how to perform matrix operations in MATLAB
+%% MATLAB overview
+% MATLAB (short for MATrix LABoratory) is a commonly used interactive software 
+% amongst engineers. As the name suggest, MATLAB organizes its data as matrices 
+% and is specially designed for matrix multiplication. In addition, it has a plethora 
+% of plugins and functions that engineers can use, such as machine learning, financial 
+% analysis, filter design etc. 
+% 
+% In Cooper, MATLAB is often used in signals class. However, it is also useful 
+% is classes that interests computer engineers (e.g. Machine Learning) and can 
+% be used as a calculator in other classes. 
+%% MATLAB Environment
+%% Command window
+% The command window is sort of the equivalent of a terminal in linux, or cygwin 
+% in windows. When you type a command into the command window, an operation performs. 
+% You can type a MATLAB command, such as 5+10, and the answer would be printed 
+% out. If a variable is not assigned to the command, the result would be stored 
+% in the variable ans automatically. If a semicolon is added at the end of the 
+% line, the result would be suppressed. You can clear the command window by typing 
+% clc. Moreover, you can also type command line commands in the command window, 
+% such as ls, pwd etc. 
+%% Command history
+% When you are playing around with different functions in MATLAB, you might 
+% want to trace back what functions you played with. At that time, you can press 
+% the up arrow, which would show you your command history. 
+%% Workspace
+% The workspace is where all the variables are stored. Each variable is displayed 
+% as a name value pair in the workspace. If the variable is a scalar, then the 
+% actual value would be shown. If it is a vector or matrix , then depending on 
+% the size of the vector / matrix, it would either be shown as its value or simply 
+% the size of the vector / array and its type. You can double click on the variables 
+% to investigate its actual value in a spreadsheet.
+%% Current Folder
+% The current folder shows you where you are located at in MATLAB. If you execute 
+% the command pwd on the command window, it should show you the location of the 
+% current folder. You might find a time where you need to add a folder and link 
+% it to your current folder location. At that time, you can right click and select 
+% "Add to Path". To change current folder, you can execute the cd command on your 
+% command window
+%% Editor
+% The editor is where you can write a script and execute it. All MATLAB scripts 
+% are saved as .m files. To execute a script, press the play button on top in 
+% EDITOR tab. When you are executing a script, you can use the semicolon to suppress 
+% the output of each line. To display a certain variable at an arbitrary location 
+% in your script, you can use disp() function. 
+%% Arithmetic and Basic functions
+%% Basic Operations
+
+5+10;                % Addition
+ans;                 % Prints out previous answer
+25-7;                % Subtraction
+24*86;               % Multiplication
+123.456*78.90;       % Multiplication
+145/123;             % Division
+2^5;                 % Exponential
+log10(1000);         % Logarithm base 10
+log(exp(5));         % Natural logarithm
+sqrt(625);           % Square root
+sin(pi);             % sine function
+asin(0);             % arc sine function
+1e5;                 % e5 multiplies 1 by 10^5
+1e-2;                % e-2 multiplies 1 by 10^-2
+%% Complex Numbers
+%%
+2+i;
+2+j;
+(2+2i)*(3+4j);
+%% Special Numbers
+%%
+pi
+exp(2*pi*j)
+inf
+%% Complex number operations
+%%
+conj(2+i);         % complex conjugate
+real(2+i);         % real part
+imag(2+i);         % imaginary part
+abs(2+i);          % magnitude/absolute value
+angle(2+i);        % angle or phase
+%% Variables
+% In matlab, there are 3 different kinds of variabes
+% 
+% * Scalar - A scalar appears as 1-by-1 and it is a single real or complex number
+% * Vector - A vector is 1-by-n or n-by-1, and appears in MATLAB as a row or 
+% column of complex numbers
+% * Matrix - A matrix is m-by-n, and appears in MATLAB as, essentially, a matrix. 
+% A matrix is a 2-D array
+% * Array - An array is a way to store numbers. 
+%% Scalar Variables
+%%
+a = 5;
+b = 10;
+c = a+b;
+z1 = 2+j;
+z2 = 3+4j;
+z = z1*z2;
+%% Vector Variables
+%%
+x = [1 2+3j 2.718 pi cos(pi)];         % row vector
+x = [1, 2+3j, 2.718, pi, cos(pi)];     % same thing with commas
+xT = transpose(x);                     % now you created the column vector
+y = [1 ; 2.5 ; 3.2 ; 4*pi; cos(pi)];   % column vector    
+xlen = length(x)                       % length of row/col vector
+ylen = length(y)                       % same value as length(x)!
+%% BE CAREFUL!
+% The following two vectors produces vectors of different sizes, the reason 
+% being linspace(x1, x2, n) creates n evenly spaced points between x1 and x2 , 
+% with the value of interval (x2-x1)/(n+1), while the colon operator (used in 
+% the form of x1:i:x2) creates an array with [x1, x1+i, x1+2i..., x1+mi], where 
+% m = (x2-x1)/i. Hence when creating a vector with the colon operator or linspace, 
+% make sure you know when to use it. In conclusion, linspace works with number 
+% of points, whereas the colon operator works with increments
+%%
+v1 = linspace(-5,5,10)
+v2 = -5:1:5
+%% Matrix Variables
+%%
+A = [1 2 3; 4 5 6; 7 8 9]; % basic construction of matrix
+B = repmat(A,2,1);         % you concatenated A one above the other
+C = [A;A];                 % You've placed A side by side 2 times
+C1 = transpose(C);         % now you transposed C!
+C2 = C.';                  % still transposed! if it is only C' then it is conjugate transpose
+size(C)                    % Confirm that they are tranposes of each other
+size(C1)
+size(C1,1)                 % You get the dimension you want!
+eye(3);                    % Create identity matrix
+speye(30000000);           % Create sparse identity matrix
+D = ones(50,60);           % D is 50-by-60 ones
+E = zeros(40);             % E is 40-by-40 zeros
+%% Matrix Operations
+%%
+B+C;          % addition
+B-C;          % subtraction
+4*B + C/5;    % multiplication and division with a constant
+A+1;          % element wise addition with a constant
+B*C';         % matrix multiplication
+B.*C;         % element wise multiplication
+B.^3          % exponents, note: do not use B^3
+2*(eye(3))^3  % only possible with square matrices
+%% Broadcasting
+%%
+v = [1 2 3 4];
+w = v';
+w-v
+##### SOURCE END #####
+--></body></html>
