@@ -1,0 +1,38 @@
+%% State Space Definitions
+% x(k+1) = Ax(k) + Bu(k)
+% y(k) = Cx(k) + Du(k)
+% or in the Z domain,
+% zX(z) = AX(z) + BU(z)
+% Y(z) = CX(z) + DU(z)
+%% State Space Setup
+x = ones(3,1);
+u = randn(2,1);
+%%
+A = 0.5*eye(3) + 0.01*randn(3);
+abs(eig(A))
+%%
+C = [1 -1 1;
+     0 1 0];
+ 
+B = 1e-2*[1/4 1/4 0;
+     1/4 1/2 1/4;
+     0 1/4 1/2];
+ 
+D = 1e-2*eye(2);
+%% Simulating State Space
+X = zeros(100,1);
+Y = X;
+Z = Y;
+for k = 1:10000
+    u = randn(2,1);
+    v = randn(3,1);
+    y = C*x + D*u;
+    x = A*x + B*v;
+    X(k) = real(x(1));
+    Y(k) = real(x(2));
+    Z(k) = real(x(3));
+end
+%%
+plot([X,Y,Z])
+%%
+comet3(X,Y,Z)
